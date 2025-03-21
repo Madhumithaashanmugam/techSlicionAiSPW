@@ -9,13 +9,17 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+<!-------------------------------------------------------------------------------------------------------------------------------------------->
 
 <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
+    <div class="container" style="display: flex; align-items: center; justify-content: space-between; width: 100%; max-width: 1200px; margin: 0 auto;">
+        <!-- Left-aligned Brand with right margin -->
+        <div class="navbar-header" style="margin-right: 20px;">
             <a class="navbar-brand" href="#">Tech<span style="color: yellow;">Silicon</span></a>
         </div>
-        <div class="nav-container">
+        
+        <!-- Centered Navigation Items -->
+        <div class="nav-container" style="flex-grow: 1; display: flex; justify-content: center;">
             <ul class="nav navbar-nav">
                 <li class="text"><a href="#">Home</a></li>
                 <li class="text"><a href="#">Services</a></li>
@@ -23,13 +27,19 @@
                 <li class="text"><a href="#">Projects</a></li>
                 <li class="text"><a href="#">Careers</a></li>
                 <li class="text"><a href="#">Testimonials</a></li>
+                
             </ul>
         </div>
-        <button class="btn btn-warning navbar-btn">Contact</button>
+        
+        <!-- Right-aligned Contact Button with left margin -->
+        <div class="navbar-btn-container" style="display: flex; align-items: center; justify-content: flex-end; margin-left: 20px;">
+            <button class="btn btn-warning navbar-btn">Contact</button>
+        </div>
     </div>
     <div class="navbar-separator"></div>
 </nav>
 
+<!-------------------------------------------------------------------------------------------------------------------------------------------->
 
     <!-- Hero Section -->
     <div class="jumbotron text-center hero-section">
@@ -38,10 +48,14 @@
             Welcome to Tech Silicon
         </button>
         <h2 class="main-heading">
-            <span class="white-text">Seamless</span> 
-            <span class="curve-underline">Talent Sourcing</span>
-            <p></p> 
+            <span class="white-text">Seamless</span>
+                <span class="curve-underline" style="position: relative; display: inline-block;">
+                    Talent Sourcing
+                    <img src="/assets/icons/underline.png" alt="Underline" style="position: absolute; left: 0;top: 20px;; width: 50%; height: auto;;margin-top:50px;margin-left:10vh">
+                </span>
+                <p></p>
             <span class="white-text"> & ATS Solutions</span>
+
         </h2>
         
         <p class="trusted-text"> I Trusted by 
@@ -69,6 +83,7 @@
             </div>
         </div>
     </div>
+    
 
     <div class="container text-center companies-section">
         <p>Trusted by 
@@ -100,7 +115,9 @@
                 </button>
             </li>
         </ul>
+</div>
        
+<!-------------------------------------------------------------------------------------------------------------------------------------------->
         <!-- Services Section -->
 <div class="container text-center services-section">
     <button class="btn btn-default rounded-button">
@@ -129,7 +146,10 @@
     <div class="row service-row">
         <!-- First Column -->
         <div class="col-sm-3 text-center service-box">
-            <img src="/assets/icons/talentSourcing.png" alt="Icon 1" class="service-icon">
+            <div class="image-container">
+                <img src="/assets/icons/talent/image1.png" alt="Icon 1" class="service-icon">
+                <img src="/assets/icons/talent/image2.png" alt="Icon 2" class="service-icon">
+            </div>
             <h3 class="service-subheading">Talent Sourcing Partner, ATS</h3>
             <p class="service-description">Empower your business with top-tier IT professionals. We connect you with skilled talent to drive innovation and success.</p>
             <button class="btn service-btn">Know More</button>
@@ -169,6 +189,11 @@
         </div>
     </div>
 </div>
+</div>
+
+<!-------------------------------------------------------------------------------------------------------------------------------------------->
+
+
 <!-- About Us Section -->
 <div class="container text-center about-section">
     <!-- About Us Button -->
@@ -189,62 +214,604 @@
     
     <p class="about-text">Let's shape the future — together.</p>
 </div>
-<div class="main-layout">
-    <!-- First Row -->
-    <div class="row first-row">
-        <div class="column first-col">
-            <div class="image-layout">
-                <img src="/assets/images/salesReport.png" alt="Sold Products" class="image">
-            </div>
-            <h3 class="sub-heading">Sold Products in 1 Year</h3>
-            <p class="description">Our hands-on approach gives you tailored strategies and real-time insights.</p>
-        </div>
-   <!-- Single Column with Two Rows -->
-<div class="column stats-column">
-    <!-- First Row: Client Satisfaction -->
-    <div class="stats-box satisfaction-box">
-        <h3 class="satisfaction-heading">Client Satisfaction Rate</h3>
-        <h1 class="satisfaction-rate">98 <span class="percent">%</span></h1>
-        <p class="satisfaction-description">Partner with us to build a path from lead to sale.</p>
+
+<div class="container main-layout">
+<!-- First Row -->
+<div class="row first-row">
+    <!-- First Column -->
+    <div class="col first-col">
+        <img src="/assets/images/salesReport.png" alt="Sold Products" class="first-col-img">
+        <h2 class="first-col-heading">Sold products in 1 year</h2>
+        <p class="first-col-text">Our hands-on approach gives you tailored strategies and real-time insights</p>
     </div>
 
-    <!-- Second Row: Global Customers -->
-    <div class="stats-box customers-box">
-        <h3 class="customers-heading">Global Customers</h3>
-        <div class="customers-image-layout">
-            <img src="/assets/images/globalCustomers.png" alt="Global Customers" class="customers-image">
+    <!-- Second Column (Divided into Two Rows) -->
+    <div class="col second-col">
+        <!-- First Box (Client Satisfaction Rate) -->
+        <div class="row-box">
+            <h3 class="row-box-heading">Client Satisfaction Rate</h3>
+            <p class="row-box-percentage">98<span>%</span></p>
+            <p class="row-box-text">Partner with us to build a path from lead to sale.</p>
         </div>
-        <p class="customers-description">Worked with over 150+ global companies.</p>
+
+        <!-- Second Box (Global Customers) -->
+        <div class="row-box">
+            <h3 class="row-box-heading">Global Customers</h3>
+            <img src="/assets/images/globalCustomers.png" alt="Global Customers" class="row-box-image">
+            <p class="row-box-text">Worked with over 150+ Global Companies</p>
+        </div>
+    </div>
+
+    <!-- Third Column -->
+    <div class="col third-col">
+        <img src="/assets/images/teamMeeting.png" alt="Team Meeting" class="third-col-image">
     </div>
 </div>
+</div>
 
-        
-        <div class="column third-col">
-            <div class="third-col-image-layout">
-                <img src="/assets/images/teamMeeting.png" alt="Team Meeting" class="third-col-image">
-            </div>
-        </div>
 
-    </div>
+<!-- ---------------------------------------------------------------------------------------------------------------------------- -->
 
-    <!-- Second Row -->
+<!-- Second Row -->
+<div class="container">
     <div class="row second-row">
-        <div class="column small-first-col"></div>
-        <div class="column small-second-col"></div>
+        <!-- Small First Column -->
+        <div class="col small-first-col">
+            <img src="/assets/images/skyRocket.png" alt="Skyrocket" class="small-col-image">
+            <p class="small-col-text">Skyrocket your online business</p>
+        </div>
+
+        <!-- Small Second Column -->
+        <div class="col small-second-col">
+            <!-- Left Side (20%) -->
+            <div class="small-second-left">
+                <p class="small-second-text">Partnering with businesses destined for greatness</p>
+            </div>
+
+            <!-- Right Side (80%) -->
+            <div class="small-second-right">
+                <!-- First Row (5 Images) -->
+                <div class="image-row">
+                    <img src="/assets/icons/logoipsum1.png" alt="Logo 1" class="small-logo">
+                    <img src="/assets/icons/logoipsum2.png" alt="Logo 2" class="small-logo">
+                    <img src="/assets/icons/logoipsum3.png" alt="Logo 3" class="small-logo">
+                    <img src="/assets/icons/logoipsum4.png" alt="Logo 4" class="small-logo">
+                    <img src="/assets/icons/logoipsum5.png" alt="Logo 5" class="small-logo">
+                </div>
+
+                <!-- Second Row (5 Images) -->
+                <div class="image-row">
+                    <img src="/assets/icons/logoipsum1.png" alt="Logo 1" class="small-logo">
+                    <img src="/assets/icons/logoipsum2.png" alt="Logo 2" class="small-logo">
+                    <img src="/assets/icons/logoipsum3.png" alt="Logo 3" class="small-logo">
+                    <img src="/assets/icons/logoipsum4.png" alt="Logo 4" class="small-logo">
+                    <img src="/assets/icons/logoipsum5.png" alt="Logo 5" class="small-logo">
+                </div>
+            </div>
+        </div>
     </div>
+</div>
+
 </div>
 
 
 
+<!------------------------------------------------ project section ------------------------------------------------------------>
+
+
+
+
+<!-- project section -->
+<div class="project-section">
+    <button class="project-button">
+        <img src="/assets/icons/project.png" alt="Project Icon">
+        Projects
+    </button>
+    <h3 class="project-title">
+        Our Clients' Success Stories <br>
+        Let you know our credibility
+    </h3>
+
+    <!-- Main Container -->
+    <div class="main-container container shadow-lg p-4 rounded">
+        <!-- Left Half -->
+        <div class="left-half col-md-6 position-relative">
+            <button class="text-button btn btn-warning mb-2">2024</button>
+            <h4 class="small-heading">E-commerce</h4>
+            <h3 class="title">Streamlining Customer Support</h3>
+            <hr class="divider-line">
+            <h2 class="overview">Overview</h2>
+            <p class="description">
+                We examine how a company optimized support processes using AI automation. By implementing an AI-powered chatbot, the company streamlined its customer interactions, reducing response times and enhancing user satisfaction.
+            </p>
+        </div>
+    
+        <!-- Right Half (Flipping Image) -->
+        <div class="right-half col-md-6 d-flex justify-content-center align-items-center">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <!-- Front Image -->
+                    <div class="flip-card-front">
+                        <img src="/assets/images/frame1.png" alt="Project Image" class="project-image img-fluid rounded shadow-sm">
+                    </div>
+                    <!-- Back Image with Overlay and Text -->
+                    <div class="flip-card-back">
+                        <img src="/assets/images/frame1.png" alt="Backside Image" class="project-image img-fluid rounded shadow-sm">
+                        <div class="back-text">
+                            <h3>Challenges:</h3>
+                            <p>High volume of customer inquiries leading to long response times and decreased customer satisfaction.</p>
+                            <h3>Solution:</h3>
+                            <p>Implementing an AI-powered chatbot to handle common customer queries and provide real-time support.</p>
+                            <h3>Result:</h3>
+                            <p>Reduced response time by 50%, improved customer satisfaction scores by 30%, and freed up human agents to focus on more complex issues.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="main-container container shadow-lg p-4 rounded">
+        <!-- Left Half -->
+        <div class="left-half col-md-6 position-relative">
+            <button class="text-button btn btn-warning mb-2">2024</button>
+            <h4 class="small-heading">E-commerce</h4>
+            <h3 class="title">Streamlining Customer Support</h3>
+            <hr class="divider-line">
+            <h2 class="overview">Overview</h2>
+            <p class="description">
+                We examine how a company optimized support processes using AI automation. By implementing an AI-powered chatbot, the company streamlined its customer interactions, reducing response times and enhancing user satisfaction.
+            </p>
+        </div>
+    
+        <!-- Right Half (Flipping Image) -->
+        <div class="right-half col-md-6 d-flex justify-content-center align-items-center">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <!-- Front Image -->
+                    <div class="flip-card-front">
+                        <img src="/assets/images/frame2.png" alt="Project Image" class="project-image img-fluid rounded shadow-sm">
+                    </div>
+                    <!-- Back Image with Overlay and Text -->
+                    <div class="flip-card-back">
+                        <img src="/assets/images/frame2.png" alt="Backside Image" class="project-image img-fluid rounded shadow-sm">
+                        <div class="back-text">
+                            <h3>Challenges:</h3>
+                            <p>High volume of customer inquiries leading to long response times and decreased customer satisfaction.</p>
+                            <h3>Solution:</h3>
+                            <p>Implementing an AI-powered chatbot to handle common customer queries and provide real-time support.</p>
+                            <h3>Result:</h3>
+                            <p>Reduced response time by 50%, improved customer satisfaction scores by 30%, and freed up human agents to focus on more complex issues.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="main-container container shadow-lg p-4 rounded">
+        <!-- Left Half -->
+        <div class="left-half col-md-6 position-relative">
+            <button class="text-button btn btn-warning mb-2">2024</button>
+            <h4 class="small-heading">E-commerce</h4>
+            <h3 class="title">Streamlining Customer Support</h3>
+            <hr class="divider-line">
+            <h2 class="overview">Overview</h2>
+            <p class="description">
+                We examine how a company optimized support processes using AI automation. By implementing an AI-powered chatbot, the company streamlined its customer interactions, reducing response times and enhancing user satisfaction.
+            </p>
+        </div>
+    
+        <!-- Right Half (Flipping Image) -->
+        <div class="right-half col-md-6 d-flex justify-content-center align-items-center">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <!-- Front Image -->
+                    <div class="flip-card-front">
+                        <img src="/assets/images/frame3.png" alt="Project Image" class="project-image img-fluid rounded shadow-sm">
+                    </div>
+                    <!-- Back Image with Overlay and Text -->
+                    <div class="flip-card-back">
+                        <img src="/assets/images/frame3.png" alt="Backside Image" class="project-image img-fluid rounded shadow-sm">
+                        <div class="back-text">
+                            <h3>Challenges:</h3>
+                            <p>High volume of customer inquiries leading to long response times and decreased customer satisfaction.</p>
+                            <h3>Solution:</h3>
+                            <p>Implementing an AI-powered chatbot to handle common customer queries and provide real-time support.</p>
+                            <h3>Result:</h3>
+                            <p>Reduced response time by 50%, improved customer satisfaction scores by 30%, and freed up human agents to focus on more complex issues.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <button class="view-all-button">
+       View all Projects
+    </button>
+</div>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------>  
+<div class="career-section"> 
+    <!-- Career Center Wrapper -->
+<div class="career-center">
+    <!-- Careers Button -->
+    <button class="careers-button">
+        <img src="/assets/icons/careers.png" alt="Career Icon">
+        Careers
+    </button>
+    <!-- Career Title -->
+    <h3 class="career-title">
+        Join Our Team & Shape <br>
+        the Future of Technology
+    </h3>
+</div>
+
+
+    <!-- Careers Slide -->
+    <div class="career-slide">
+        <div class="row">
+            <!-- Software Developer Department with Openings -->
+            <div class="col-md-12 department-block">
+                <div class="col-md-4 department">
+                    <h3 class="department-heading">Software Developer</h3>
+                    <p class="department-text">Open position in our software team</p>
+                </div>
+                <div class="col-md-8 openings">
+                    <!-- Opening 1 -->
+                    <div class="opening">
+                        <div class="opening-header">
+                            <h4 class="opening-title">Engineering Manager</h4>
+                            <button class="btn software-btn">
+                                 Software
+                            </button>
+                            <button class="btn fulltime-btn">
+                                <img src="/assets/icons/tdesign_time.png" alt="Icon"> Full-Time
+                            </button>
+                        </div>
+                        <p class="opening-desc">
+                            We are looking for a mid-level product designer to join our team.
+                        </p>
+                    </div>
+
+                    <!-- Opening 2 -->
+                    <div class="opening">
+                        <div class="opening-header">
+                            <h4 class="opening-title">Senior Developer</h4>
+                            <button class="btn software-btn">
+                                . Software
+                            </button>
+                            <button class="btn fulltime-btn">
+                                <img src="/assets/icons/tdesign_time.png" alt="Icon"> Full-Time
+                            </button>
+                        </div>
+                        <p class="opening-desc">
+                            Seeking an experienced developer with strong leadership skills.
+                        </p>
+                    </div>
+
+                    <!-- Opening 3 -->
+                    <div class="opening">
+                        <div class="opening-header">
+                            <h4 class="opening-title">Frontend Developer</h4>
+                            <button class="btn software-btn">
+                                Software
+                            </button>
+                            <button class="btn fulltime-btn">
+                                <img src="/assets/icons/tdesign_time.png" alt="Icon"> Full-Time
+                            </button>
+                        </div>
+                        <p class="opening-desc">
+                            Join our frontend team to build interactive applications.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Yellow Separation Line -->
+            <hr class="yellow-line department-separator">
+
+            <!-- Design Department with Openings -->
+            <div class="col-md-12 department-block">
+                <div class="col-md-4 department">
+                    <h3 class="department-heading">Design</h3>
+                    <p class="department-text">Open position in our Design team.</p>
+                </div>
+                <div class="col-md-8 openings">
+                    <!-- Opening 1 -->
+                    <div class="opening">
+                        <div class="opening-header">
+                            <h4 class="opening-title">Mobile Application Developer</h4>
+                            <button class="btn software-btn">
+                                 Software
+                            </button>
+                            <button class="btn fulltime-btn">
+                                <img src="/assets/icons/tdesign_time.png"alt="Icon"> Full-Time
+                            </button>
+                        </div>
+                        <p class="opening-desc">
+                            We are looking for a mid-level product designer to join our team.
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="yellow-gradient-footer">
+            Please send resume to: <a href="mailto:techsilicon@gmail.com" style="color: black; text-decoration: underline;">techsilicon@gmail.com</a>
+        </div>
+    </div>
+
+
+
+
+    
+    <div class="testimonials-section">
+          <!-- Testimonials Button -->
+     <button class="testimonials-button">
+        <img src="/assets/icons/talentSourcing.png" alt="Project Icon">
+        Testimonials
+    </button>
+    <h3 class="testimonials-title">
+        Our Clients' Success Stories <br>
+        Let you know our credibility
+    </h3>
+
+        <div class="testimonials-grid">
+            
+            <!-- Testimonial Card 1 -->
+            <div class="testimonial-card">
+                <div class="testimonial-header-section">
+                    <div class="testimonial-header">
+                        <img src="/assets/icons/kanba.png" alt="Logo" class="testimonial-logo">
+                        <div class="testimonial-rating">★★★★★</div>
+                    </div>
+                    <hr class="separator">
+                    <p class="testimonial-text">Convertify transformed our sales strategy. Their insights were invaluable in optimizing our process and driving growth.</p>
+                </div>
+                <div class="client-info-section">
+                    <div class="client-info">
+                        <img class="client-image" src="/assets/images/client1.jpg" alt="John Davis">
+                        <div class="client-details">
+                            <p class="client-name">John Davis
+                                <span class="client-role"> Sales Director at TechCo</span>
+                            </p>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial Card 2 -->
+            <div class="testimonial-card">
+                <div class="testimonial-header-section">
+                    <div class="testimonial-header">
+                        <img src="/assets/icons/kanba.png" alt="Logo" class="testimonial-logo">
+                        <div class="testimonial-rating">★★★★★</div>
+                    </div>
+                    <hr class="separator">
+                    <p class="testimonial-text">The team at Convertify provided expert guidance that significantly improved our lead generation efforts and closed more deals.</p>
+                </div>
+                <div class="client-info-section">
+                    <div class="client-info">
+                        <img class="client-image" src="/assets/images/client2.jpg" alt="Michael Brown">
+                        <div class="client-details">
+                            <p class="client-name">Michael Brown
+                            <span class="client-role">CEO at MarketShift</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial Card 3 -->
+            <div class="testimonial-card">
+                <div class="testimonial-header-section">
+                    <div class="testimonial-header">
+                        <img src="/assets/icons/kanba.png" alt="Logo" class="testimonial-logo">
+                        <div class="testimonial-rating">★★★★★</div>
+                    </div>
+                    <hr class="separator">
+                    <p class="testimonial-text">Thanks to Convertify, we streamlined our sales pipeline, resulting in higher conversions and better team efficiency.</p>
+                </div>
+                <div class="client-info-section">
+                    <div class="client-info">
+                        <img class="client-image" src="/assets/images/client3.jpg" alt="David Smith">
+                        <div class="client-details">
+                            <p class="client-name">David Smith
+                            <span class="client-role">Sales Manager at Innovatech</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial Card 4 -->
+            <div class="testimonial-card">
+                <div class="testimonial-header-section">
+                    <div class="testimonial-header">
+                        <img src="/assets/icons/kanba.png" alt="Logo" class="testimonial-logo">
+                        <div class="testimonial-rating">★★★★★</div>
+                    </div>
+                    <hr class="separator">
+                    <p class="testimonial-text">Working with Convertify was a game-changer. Their tailored approach helped us scale our sales efforts effectively.</p>
+                </div>
+                <div class="client-info-section">
+                    <div class="client-info">
+                        <img class="client-image" src="/assets/images/client4.jpg" alt="James Taylor">
+                        <div class="client-details">
+                            <p class="client-name">James Taylor
+                                <span class="client-role"> Founder at GrowthHub</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial Card 5 -->
+            <div class="testimonial-card">
+                <div class="testimonial-header-section">
+                    <div class="testimonial-header">
+                        <img src="/assets/icons/kanba.png" alt="Logo" class="testimonial-logo">
+                        <div class="testimonial-rating">★★★★★</div>
+                    </div>
+                    <hr class="separator">
+                    <p class="testimonial-text">Convertify's strategies gave us a clear path forward, and our sales numbers have improved across the board.</p>
+                </div>
+                <div class="client-info-section">
+                    <div class="client-info">
+                        <img class="client-image" src="/assets/images/client5.jpg" alt="Chris Wilson">
+                        <div class="client-details">
+                            <p class="client-name">Chris Wilson
+                                <span class="client-role"> VP of Sales at BuildPro</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial Card 6 -->
+            <div class="testimonial-card">
+                <div class="testimonial-header-section">
+                    <div class="testimonial-header">
+                        <img src="/assets/icons/kanba.png" alt="Logo" class="testimonial-logo">
+                        <div class="testimonial-rating">★★★★★</div>
+                    </div>
+                    <hr class="separator">
+                    <p class="testimonial-text">The sales process improvements from Convertify helped us close deals faster and boost revenue consistently.</p>
+                </div>
+                <div class="client-info-section">
+                    <div class="client-info">
+                        <img class="client-image" src="/assets/images/client6.jpg" alt="Daniel Lee">
+                        <div class="client-details">
+                            <p class="client-name">Daniel Lee 
+                                <span class="client-role"> Head of Sales at NextGen Solutions</span>
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+</div>
+
+<div class="sales-hero-container">
+    <h2 class="sales-hero-title">Your Path to Profitable 
+        <span style="color: yellow; position: relative; display: inline-block;">
+            Sales
+            <img src="/assets/icons/underline.png" alt="Underline" style="position: absolute; right: -10px; top: 30px; width: 100%; height: 50%;">
+        </span> 
+        Start Here
+    </h2>
+    
+        <p class="sales-hero-text">Our team of seasoned sales consultants works closely with you to design strategies tailored to your unique goals and market dynamics.</p>
+        <button class="sales-hero-btn">Get Started</button>
+        <p></p>
+        <img src="/assets/images/group.png" alt="Sales Strategy" class="sales-hero-img">
+</div>
+    
+<!-------------------------------------------------------------------------------------------------------------------------------------------->
+    
+    <div class="contact-header">
+        <h2 class="contact-us-title">Reach Out to Us</h2>
+        <button class="contact-us-btn">Contact Us</button>
+    </div>
+    
+    <div class="contact-us-container">
+        <div class="contact-section">
+            <!-- Left Section -->
+            <div class="contact-details">
+                <p class="contact-heading">Get in Touch</p>
+                <hr class="separator">
+                
+                <p>Email:</p>
+                <p> support@techsilicon.com</p>
+                
+                <p>Phone:</p>
+                <p> +91-889-756-8787</p>
+               
+                <p>Address:</p>
+                <p> 2116 Walsh Ave, Suite #C8, Santa Clara, CA-95050</p>
+                
+                <hr class="separator">
+                <p>Follow Us:</p>
+                <div class="social-icons">
+                    <img src="/assets/icons/twitter.png" alt="Twitter" class="social-icon">
+                    <img src="/assets/icons/linkedin.png" alt="LinkedIn" class="social-icon">
+                    <img src="/assets/icons/instagram.png" alt="Instagram" class="social-icon">
+                </div>
+            </div>
+    
+          <!-- Right Section -->
+<div class="contact-form">
+    <div class="form-row">
+        <div>
+            <label class="form-label">Name:</label>
+            <input type="text" class="form-control" placeholder="Your Name">
+        </div>
+        <div>
+            <label class="form-label">Email:</label>
+            <input type="email" class="form-control" placeholder="Your Email">
+        </div>
+    </div>
+
+    <label class="form-label">Message:</label>
+    <textarea class="form-control message-box" placeholder="Your Message"></textarea>
+
+    <div class="subscribe-section">
+        <input type="checkbox" id="subscribe">
+        <label for="subscribe">Subscribe to Newsletter</label>
+    </div>
+
+    <button class="send-message-btn">Send Message</button>
+</div>
+
+</div>
+</div>
+
 
 </div>
 
-        
+<!-- Footer -->
+<footer class="footer-container">
+    <h2 class="footer-heading">TechSilicon</h2>
+    
+    <!-- Navigation Links -->
+    <nav class="footer-nav">
+        <a href="#">Home</a>
+        <a href="#">Product</a>
+        <a href="#">Projects</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Career</a>
+    </nav>
+    
+    <!-- Social Media Icons -->
+    <div class="social-icons">
+        <a href="#"><img src="/assets/icons/linkedin.png" alt="Linkedin" class="social-icon"></a>
+        <a href="#"><img src="/assets/icons/twitter.png" alt="Twitter" class="social-icon"></a>
+        <a href="#"><img src="/assets/icons/instagram.png" alt="Instagram" class="social-icon"></a>
     </div>
-  
-
-   
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <!-- Copyright Text -->
+    <p class="copyright">© 2024 TechSilicon</p>
+</footer>
 </body>
+</html>
+
+       
+    </div> 
+    
+    
+
+
+
+</body>
+</html>
+
+</body>
+
 </html>
