@@ -1,0 +1,58 @@
+.footer-container {
+    width: 100%;
+    margin: 0;
+    padding: 20px 0;
+    background: #031317;
+    text-align: center;
+    color: white;
+}
+
+/* Footer Heading */
+.footer-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Footer Navigation Links */
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.footer-nav {
+    margin-bottom: 15px;
+}
+
+/* Social Media Icons */
+.social-icons-footer {
+    display: flex;
+    justify-content: center; /* Centers the icons horizontally */
+    align-items: center;
+    gap: 15px; /* Space between icons */
+    margin-top: 10px;
+}
+
+/* Icon Styling */
+.social-icons-footer img {
+    width: 30px;
+    height: 30px;
+    filter: brightness(0) invert(1) sepia(100%) saturate(5000%) hue-rotate(10deg);
+    /* This ensures the icons appear yellow */
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect */
+.social-icons-footer img:hover {
+    transform: scale(1.1);
+}
+
+
+/* Copyright Section */
+.copyright {
+    margin-top: 10px;
+    font-size: 14px;
+    
+}

@@ -1,0 +1,244 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar-collapse {
+    margin-top: 10vh;
+    margin-bottom: 1vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Expand the navbar to full width */
+}
+
+.navbar-brand {
+    font-size: 22px;
+    color: white !important;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: auto;
+    margin-top: 10px; 
+}
+
+.navbar-center {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    margin-left: 25vh;
+    margin-top: 2vh;
+}
+
+.navbar-right {
+    margin-right: 0; 
+    margin-left: 20vh;
+}
+
+.navbar-btn {
+    margin-left: 20px;
+    margin-top: 1vh;
+}
+
+
+.navbar {
+    background: #031114;
+    border: none;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: 1px solid #dee1b1;
+    justify-content: space-between;
+}
+
+/* Navbar Brand */
+
+
+/* Center Navigation */
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.navbar-nav li {
+    padding: 0 10px;
+}
+
+.navbar-nav li a {
+    color: white !important;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav li a:hover {
+    color: lightgray !important;
+}
+
+/* Contact Button */
+.navbar-btn {
+    background: #ffc107;
+    color: black;
+    border: none;
+    padding: 8px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.navbar-btn:hover {
+    background: #e0a800;
+}
+
+/* Mobile Sidebar (Slide-in from Right) */
+.mobile-nav {
+    position: fixed;
+    top: 2vh;
+    right: -250px;
+    width: 250px;
+    height: 100vh;
+    background: #010d0f;
+    padding-top: 60px;
+    transition: right 0.4s ease-in-out;
+    box-shadow: -2px 0 5px rgba(208, 203, 203, 0.5);
+    z-index: 1000;
+}
+
+.mobile-nav.active {
+    right: 0;
+}
+
+/* Sidebar Title */
+.mobile-nav h3 {
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+/* Sidebar Menu */
+.mobile-nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.mobile-nav li {
+    padding: 15px;
+}
+
+.mobile-nav a {
+    color: white !important;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    transition: background 0.3s ease;
+}
+
+.mobile-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Hamburger Icon */
+.navbar-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.icon-bar {
+    background: white;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    display: block;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .navbar-nav {
+        display: none;
+    }
+
+    .navbar-toggle {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+    }
+
+    .navbar-brand {
+        font-size: 20px;
+        margin-left: 15px;
+    }
+
+    .mobile-nav ul {
+        padding-left: 0;
+
+    }
+
+    .mobile-nav ul li:last-child {
+        padding-top: 20px;
+    }
+
+    .navbar-btn {
+        position: absolute;
+        right: 60px;
+        top: 15px;
+    }
+    .navbar-brand {
+        font-size: 22px;
+        color: white !important;
+        text-decoration: none;
+        font-weight: bold;
+        margin-left: auto;
+       margin-bottom: 10vh;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Fix Navbar Toggle */
+    .navbar-toggle {
+        border: none;
+        background: transparent;
+    }
+
+    .icon-bar {
+        background-color: white;
+    }
+
+    /* Center & Resize TechSilicon Brand */
+    #brand-logo {
+        font-size: 20px;
+        font-weight: bold;
+        padding: 10px 15px;
+        display: inline-block;
+    }
+
+    /* Ensure Navigation Links Stack on Mobile */
+    .navbar-nav {
+        text-align: center;
+        width: 100%;
+    }
+
+    .navbar-nav li {
+        display: block;
+        width: 100%;
+    }
+}

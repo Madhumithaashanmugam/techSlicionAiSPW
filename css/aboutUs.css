@@ -1,0 +1,321 @@
+
+/* About Us Section */
+.about-section {
+    margin-bottom: 50px;
+}
+
+.about-text {
+    color: white;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 15px auto;
+    max-width: 800px;
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.highlight-text {
+    color: yellow;
+    font-weight: bold;
+}
+
+
+
+/* First Row Styling */
+.first-row {
+    display: flex;
+    flex-wrap: nowrap; 
+    gap: 20px; 
+    justify-content: space-between; 
+    align-items: stretch;
+    width: 100%;
+}
+/* First Column (25% Width) */
+.first-col {
+    flex: 0 0 25%;
+    max-width: 25%;
+    background: #031114;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    text-align: left;
+}
+
+.first-col-text,
+.row-box-text {
+    color: gray; 
+    font-size: 18px; 
+    margin-top: 5px;
+}
+
+/* Percentage Styling */
+.row-box-percentage {
+    font-size: 65px; 
+    color: white; 
+}
+
+.row-box-percentage span {
+    color: yellow; 
+    font-weight: bold;
+}
+.first-col img {
+    width: 80%; 
+    height: auto;
+    margin-bottom: 10px; 
+    border-radius: 8px; 
+}
+
+
+/* Smaller Image in First Column */
+.first-col img {
+    width: 100%; 
+    height: auto;
+    margin-bottom: 10px; 
+    border-radius: 8px; 
+}
+
+/* Second Column (25% Width) */
+.second-col {
+    flex: 0 0 25%;
+    max-width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start; 
+    text-align: left; 
+}
+
+/* Row Boxes inside Second Column */
+.row-box {
+    background: #031114;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: left; 
+}
+
+
+/* Third Column (50% Width) */
+.third-col {
+    flex: 0 0 50%; 
+    max-width: 50%;
+    background: #031114;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Image Styling */
+.third-col img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+
+/* Second Row */
+.second-row {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 107%; 
+}
+.small-first-col {
+    flex: 0 0 25%; 
+    max-width: 20%;
+    background: #031114;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+}
+.small-col-text{
+    margin-top: 2vh;
+}
+
+.small-second-col {
+    flex: 0 0 74%; 
+    max-width: 150%;
+    background: #031114;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    gap: 5px;
+}
+/* Left Side (20%) */
+.small-second-left {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+/* Left Side Text */
+.small-second-text {
+    font-size: 20px;
+    color: white;
+    margin: 0;
+    padding: 0;
+    line-height: 1.3;
+}
+
+/* Right Side (80%) */
+.small-second-right {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Image Rows */
+.image-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2px;
+}
+
+/* Small Logos */
+.small-logo {
+    width: 100.67px;  
+    height: 35px;      
+    object-fit: contain; 
+}
+
+@media screen and (max-width: 768px) {
+
+
+    .about-text {
+        font-size: 16px;
+        padding: 0 15px;
+    }
+
+    /* Stack Columns Vertically */
+    .first-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin: 2px;
+    }
+
+    .first-col, .second-col, .third-col {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .first-col {
+        text-align: center;
+        align-items: center;
+    }
+
+    .first-col img {
+        width: 60%; /* Reduce image size */
+    }
+
+    .row-box {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .third-col img {
+        height: auto;
+        width: 100%;
+    }
+
+    /* Adjust Second Row */
+    .second-row {
+        flex-direction: column;
+        width: 100%;
+        margin-left: 1px;
+    }
+
+    .small-first-col, .small-second-col {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .small-second-left {
+        text-align: center;
+        width: 100%;
+    }
+
+    .small-second-right {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .image-row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .small-logo {
+        width: 80px; 
+        height: 30px;
+    }
+    .first-row
+    .scroll-animation {
+    opacity: 0;
+    transform: translateX(-100px); /* Start from left */
+    transition: all 0.8s ease-in-out;
+}
+
+/* Default state: Hidden and positioned off-screen */
+.scroll-animation {
+    opacity: 0;
+    transform: translateX(-100px); /* Move left */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Left to Right Animation */
+.animate-left-to-right {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Right to Left Animation */
+.animate-right-to-left {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Keyframes for smooth animation */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+ 
+
+}

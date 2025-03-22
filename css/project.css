@@ -1,0 +1,373 @@
+
+/* Project Section */
+.project-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left; 
+    padding: 50px 0;
+}
+
+
+
+
+/* Heading */
+.project-title {
+    font-size: 32px;
+    color: white;
+    margin-top: 20px;
+    margin-top: 5vh;
+    font-weight: bold;
+    line-height: 1.4;
+    text-align: left;
+    word-spacing: 3px;
+
+}
+/* Main Container */
+.main-container {
+    width: 100%;
+    max-width: 1200px;
+    min-height: auto; 
+    margin: 40px auto;
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    display: flex;
+    box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #031317;
+}
+
+/* Left Half Styling */
+.left-half {
+    flex: 1; 
+    padding: 30px;
+    color: white;
+    position: relative;
+    text-align: left;
+}
+
+.text-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    margin-top: 10px;
+    background-color: #0d1d1e;
+    color: rgb(255, 255, 255);
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: 5px solid rgb(45, 53, 85); 
+    margin-bottom: 10px;
+}
+
+.small-heading {
+    font-size: 16px;
+    color: #cccccc;
+    text-align: left; 
+    margin-top: 15vh;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 5px 0;
+    color: yellow;
+    text-align: left; 
+}
+
+.divider-line {
+    border: 0;
+    height: 2px;
+    background: #07484f;
+    margin: 10px 0;
+}
+
+.overview {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-align: left;
+}
+
+.description {
+    font-size: 16px;
+    margin-top: 5px;
+    line-height: 1.5;
+    color: gainsboro;
+    text-align: left;
+    margin-bottom: 10vh; 
+}
+
+/* Right Half (Image) Styling */
+.right-half {
+    flex: 1.5; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.project-image {
+    width: 100%; 
+    height: auto;
+    max-width: 800px; 
+    max-height: 600px; 
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+}
+.view-all-button {
+    background-color: yellow;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.view-all-button:hover {
+    background-color: darkyellow; 
+}
+
+
+/* ----------------------------------------------flip screen------------------------------- */
+
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: auto;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+/* Flip vertically on hover */
+.main-container:hover .flip-card-inner {
+    transform: rotateX(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flip-card-front {
+    z-index: 2;
+    transform: rotateX(0deg);
+}
+
+.flip-card-back {
+    transform: rotateX(180deg);
+    color: white;
+}
+
+.flip-card-front .project-image,
+.flip-card-back .project-image {
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 800px; /* Same max size as back image */
+    max-height: 600px; /* Same max height as back image */
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+}
+
+.back-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+/* Add opacity to the flipped image for better text visibility */
+/* .flip-card-back .project-image {
+    opacity: 0.5;
+} */
+/* Tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+    .main-container {
+        flex-direction: column; 
+        align-items: center;  
+        text-align: center; 
+    }
+
+    .left-half, .right-half {
+        width: 100%; 
+        flex: unset; 
+        padding: 20px; 
+    }
+
+    .text-button {
+        position: relative;
+        margin: 10px auto;
+        display: inline-block;
+    }
+
+    .flip-card {
+        max-width: 350px;
+    }
+}
+
+/*  Tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+    .main-container {
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+    }
+
+    .left-half, .right-half {
+        width: 100%; 
+        flex: unset; 
+        padding: 20px; 
+    }
+
+    .text-button {
+        position: relative;
+        margin: 10px auto;
+        display: inline-block;
+    }
+
+    .flip-card {
+        max-width: 400px;
+    }
+    .view-all-button {
+        background-color: yellow;
+        color: black;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 10vh;
+    }
+    /* Heading */
+    .project-title {
+    font-size: 32px;
+    text-align: center;
+    word-spacing: 3px;
+
+}
+    
+}
+
+/* ✅ Mobile Screens (Below 768px) */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .left-half {
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+
+    .flip-card {
+        max-width: 350px;
+    }
+
+  
+
+    .project-image {
+        width: 100%;  
+        max-width: 950px; 
+        max-height: 800px; 
+    }
+
+    .back-text h3 {
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .small-heading {
+        font-size: 14px;
+        margin-top: 2vh;
+    }
+    .project-title {
+        font-size: 32px;
+        text-align: center;
+        word-spacing: 3px;
+    
+    }
+}
+
+@media (max-width: 480px) {
+    .main-container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+    .description{
+        font-size: 12px;
+    }
+
+    .flip-card {
+        max-width: 280px;
+    }
+
+    .back-text {
+        padding: 5px;
+    }
+
+    .back-text h3 {
+        font-size: 14px;
+    }
+
+    .back-text p {
+        font-size: 8px;
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    .project-image {
+        width: 100%;  
+        max-width: 900px; 
+        max-height: 750px; 
+    }
+    .project-title {
+        font-size: 32px;
+        text-align: center;
+        word-spacing: 3px;
+    
+    }
+}
+
+/* ✅ Flip Animation for All Screens */
+@media (max-width: 768px) {
+    .flip-card {
+        transform: rotateX(0deg);
+    }
+
+    .main-container:hover .flip-card-inner,
+    .flip-card.scroll-visible .flip-card-inner {
+        transform: rotateX(180deg);
+    }
+}
