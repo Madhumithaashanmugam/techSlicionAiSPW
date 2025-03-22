@@ -221,7 +221,7 @@
     }
 
     .first-col img {
-        width: 60%; /* Reduce image size */
+        width: 60%; 
     }
 
     .row-box {
@@ -269,14 +269,14 @@
     .first-row
     .scroll-animation {
     opacity: 0;
-    transform: translateX(-100px); /* Start from left */
+    transform: translateX(-100px); 
     transition: all 0.8s ease-in-out;
 }
 
 /* Default state: Hidden and positioned off-screen */
 .scroll-animation {
     opacity: 0;
-    transform: translateX(-100px); /* Move left */
+    transform: translateX(-100px);
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 

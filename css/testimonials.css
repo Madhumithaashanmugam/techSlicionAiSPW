@@ -1,5 +1,4 @@
 
-/* Testimonials Section */
 .testimonials-heading {
     display: flex;
     align-items: center;
@@ -49,13 +48,13 @@
 .testimonial-card {
     background: #031317;
     border-radius: 15px;
-    padding: 20px; /* Increased padding */
+    padding: 20px; 
     color: white;
     margin: 0.5%; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
     border: 1px solid rgba(255, 255, 255, 0.1);
     transition: transform 0.3s ease;
-    min-height: 300px; /* Increased minimum height */
+    min-height: 300px; 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -201,8 +200,8 @@
 @media (max-width: 768px) {
     .testimonials-grid {
         display: grid;
-        grid-template-columns: repeat(2, 1fr); /* 2 columns */
-        gap: 15px; /* Space between cards */
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 15px; 
     }
 
     .testimonial-card {
@@ -256,42 +255,36 @@
     }
 }
 
-/* Extra Small Screens - Show 1 Column (for screens less than 480px) */
 @media (max-width: 480px) {
     .testimonials-grid {
-        grid-template-columns: 1fr; /* Single column for very small screens */
+        grid-template-columns: 1fr; 
     }
 }
-/* Default hidden state */
 .testimonial-card {
     opacity: 0;
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
-/* Initially move off-screen */
 .testimonial-card:nth-child(odd) {
-    transform: translateX(-100px); /* Odd elements move in from left */
+    transform: translateX(-100px); 
 }
 
 .testimonial-card:nth-child(even) {
-    transform: translateX(100px); /* Even elements move in from right */
+    transform: translateX(100px);
 }
 
-/* Left to Right Animation */
 .animate-left-to-right {
     opacity: 1;
     transform: translateX(0);
     animation: slideInLeft 0.8s ease-in-out forwards;
 }
 
-/* Right to Left Animation */
 .animate-right-to-left {
     opacity: 1;
     transform: translateX(0);
     animation: slideInRight 0.8s ease-in-out forwards;
 }
 
-/* Keyframes */
 @keyframes slideInLeft {
     from {
         opacity: 0;

@@ -63,7 +63,7 @@
 /* Separator Line */
 .separator {
     border: 0.5px solid rgba(255, 255, 255, 0.2);
-    margin: 8px 0; /* Adjust margin to reduce space */
+    margin: 8px 0; 
     width: 100%;
 }
 
@@ -127,7 +127,7 @@
     color: gray;
 }
 
-/* Removed input border color */
+
 .form-control,
 .form-control-inline {
     width: 100%;
@@ -196,12 +196,12 @@
     }
 
     .contact-section {
-        flex-direction: column; /* Stack sections */
+        flex-direction: column; 
         gap: 30px;
     }
 
     .form-row {
-        flex-direction: column; /* Stack input fields */
+        flex-direction: column; 
         gap: 10px;
     }
 
@@ -225,7 +225,6 @@
     }
 }
 
-/* 📱 Medium Devices (Tablets) */
 @media (max-width: 1024px) {
     .contact-us-container {
         width: 90%;
@@ -255,7 +254,6 @@
     }
 }
 
-/* 🖥️ Large Screens */
 @media (min-width: 1200px) {
     .contact-us-container {
         max-width: 1100px;

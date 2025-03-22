@@ -175,7 +175,6 @@
 }
 
 
-/* Common styles for all screen sizes */
 .stats-section .thumbnail img {
     width: 100%;
 }
@@ -213,7 +212,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 30px; /* Space between images */
+        gap: 30px; 
     }
 
     .stats-section .row {
@@ -285,7 +284,6 @@
     }
 
 
-/* Large Desktops (1025px and above) */
 @media only screen and (min-width: 1025px) {
     .hero-section {
         font-size: 70px;

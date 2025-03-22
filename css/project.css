@@ -145,7 +145,6 @@
     transform-style: preserve-3d;
 }
 
-/* Flip vertically on hover */
 .main-container:hover .flip-card-inner {
     transform: rotateX(180deg);
 }
@@ -173,10 +172,10 @@
 
 .flip-card-front .project-image,
 .flip-card-back .project-image {
-    width: 100%; /* Full width */
-    height: auto; /* Maintain aspect ratio */
-    max-width: 800px; /* Same max size as back image */
-    max-height: 600px; /* Same max height as back image */
+    width: 100%; 
+    height: auto; 
+    max-width: 800px; 
+    max-height: 600px; 
     border-radius: 16px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     object-fit: cover;
@@ -190,14 +189,13 @@
     height: 100%;
     padding: 20px;
     text-align: left;
-    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay */
+    background-color: rgba(0, 0, 0, 0.4); 
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: white;
 }
 
-/* Add opacity to the flipped image for better text visibility */
 /* .flip-card-back .project-image {
     opacity: 0.5;
 } */
@@ -259,7 +257,6 @@
         cursor: pointer;
         margin-top: 10vh;
     }
-    /* Heading */
     .project-title {
     font-size: 32px;
     text-align: center;
@@ -269,7 +266,6 @@
     
 }
 
-/* ✅ Mobile Screens (Below 768px) */
 @media (max-width: 768px) {
     .main-container {
         flex-direction: column;
@@ -360,7 +356,6 @@
     }
 }
 
-/* ✅ Flip Animation for All Screens */
 @media (max-width: 768px) {
     .flip-card {
         transform: rotateX(0deg);

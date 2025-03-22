@@ -4,18 +4,17 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-    min-height: 100vh; /* Ensures the body covers the full viewport height */
+    overflow-x: hidden; 
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-/* Ensure content scales properly */
 .container {
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto; /* Center content */
+    margin: 0 auto; 
     padding: 20px;
 }
 
@@ -27,7 +26,6 @@ html, body {
     overflow-x: hidden;
 }
 
-/* Improve responsiveness for smaller screens */
 @media (max-width: 768px) {
     body {
         font-size: 16px;
@@ -106,9 +104,9 @@ html, body {
 /* Social Media Icons */
 .social-icons-footer {
     display: flex;
-    justify-content: center; /* Centers the icons horizontally */
+    justify-content: center; 
     align-items: center;
-    gap: 15px; /* Space between icons */
+    gap: 15px; 
     margin-top: 10px;
 }
 
@@ -117,7 +115,6 @@ html, body {
     width: 30px;
     height: 30px;
     filter: brightness(0) invert(1) sepia(100%) saturate(5000%) hue-rotate(10deg);
-    /* This ensures the icons appear yellow */
     transition: transform 0.3s ease;
 }
 

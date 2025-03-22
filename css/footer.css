@@ -29,9 +29,9 @@
 /* Social Media Icons */
 .social-icons-footer {
     display: flex;
-    justify-content: center; /* Centers the icons horizontally */
+    justify-content: center; 
     align-items: center;
-    gap: 15px; /* Space between icons */
+    gap: 15px; 
     margin-top: 10px;
 }
 
@@ -40,7 +40,6 @@
     width: 30px;
     height: 30px;
     filter: brightness(0) invert(1) sepia(100%) saturate(5000%) hue-rotate(10deg);
-    /* This ensures the icons appear yellow */
     transition: transform 0.3s ease;
 }
 

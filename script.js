@@ -65,9 +65,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const flipCards = document.querySelectorAll(".flip-card");
 
     const observerOptions = {
-        root: null, // Uses the viewport
+        root: null, 
         rootMargin: "0px",
-        threshold: 0.3, // Trigger when 30% of the element is visible
+        threshold: 0.3, 
     };
 
     const observer = new IntersectionObserver((entries) => {
@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (entry.isIntersecting) {
                 entry.target.classList.add("scroll-visible");
             } else {
-                entry.target.classList.remove("scroll-visible"); // Optional: Remove when out of view
+                entry.target.classList.remove("scroll-visible"); 
             }
         });
     }, observerOptions);
@@ -94,14 +94,12 @@ document.addEventListener("DOMContentLoaded", function () {
         mobileMenu.classList.toggle("active");
     });
 
-    // Close the sidebar when a link is clicked
     menuLinks.forEach((link) => {
         link.addEventListener("click", function () {
             mobileMenu.classList.remove("active");
         });
     });
 
-    // Close the sidebar when clicking the close button
     const closeButton = document.querySelector(".close-btn");
     closeButton.addEventListener("click", function () {
         mobileMenu.classList.remove("active");

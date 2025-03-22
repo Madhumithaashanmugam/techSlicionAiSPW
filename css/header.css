@@ -213,7 +213,7 @@
 }
 
 @media (max-width: 768px) {
-    /* Fix Navbar Toggle */
+   
     .navbar-toggle {
         border: none;
         background: transparent;
@@ -223,7 +223,6 @@
         background-color: white;
     }
 
-    /* Center & Resize TechSilicon Brand */
     #brand-logo {
         font-size: 20px;
         font-weight: bold;
@@ -231,7 +230,6 @@
         display: inline-block;
     }
 
-    /* Ensure Navigation Links Stack on Mobile */
     .navbar-nav {
         text-align: center;
         width: 100%;
