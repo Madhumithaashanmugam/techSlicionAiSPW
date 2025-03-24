@@ -157,8 +157,10 @@
     border-radius: 12px;
     color: white;
     opacity: 0.8;
-    background: url('../assets/svg/background.png') no-repeat center,
-    url('../assets/svg/backgroundline.png') no-repeat center/cover;
+    background: 
+    url('../assets/svg/backgroundline.png') no-repeat center, 
+    url('../assets/svg/background.png') no-repeat center;
+
 
 }
 
