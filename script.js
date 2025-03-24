@@ -5,28 +5,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function checkScroll() {
         const triggerBottom = window.innerHeight * 0.85;
-        const triggerTop = window.innerHeight * 0.15; // Adjusted for scrolling up
+        const triggerTop = window.innerHeight * 0.15; 
 
         testimonialCards.forEach((card, index) => {
             const cardTop = card.getBoundingClientRect().top;
             const cardBottom = card.getBoundingClientRect().bottom;
 
             if (cardTop < triggerBottom && cardBottom > triggerTop) {
-                // Apply animation when in view
                 if (index % 2 === 0) {
                     card.classList.add("animate-left-to-right");
                 } else {
                     card.classList.add("animate-right-to-left");
                 }
             } else {
-                // Remove animation when out of view to re-trigger
                 card.classList.remove("animate-left-to-right", "animate-right-to-left");
             }
         });
     }
 
     window.addEventListener("scroll", checkScroll);
-    checkScroll(); // Initial check in case elements are already in view
+    checkScroll(); 
 });
 
 //animation for about as
@@ -34,27 +32,25 @@ document.addEventListener("DOMContentLoaded", function () {
     const animatedBoxes = document.querySelectorAll(".scroll-animation");
 
     function checkScroll() {
-        const triggerBottom = window.innerHeight * 0.85; // Trigger when element reaches 85% of viewport
+        const triggerBottom = window.innerHeight * 0.85; 
 
         animatedBoxes.forEach((box, index) => {
             const boxTop = box.getBoundingClientRect().top;
 
             if (boxTop < triggerBottom) {
-                // Apply animation when box enters the viewport
                 if (index % 2 === 0) {
                     box.classList.add("animate-left-to-right");
                 } else {
                     box.classList.add("animate-right-to-left");
                 }
             } else {
-                // Remove animation when box leaves the viewport to reset
                 box.classList.remove("animate-left-to-right", "animate-right-to-left");
             }
         });
     }
 
     window.addEventListener("scroll", checkScroll);
-    checkScroll(); // Initial check
+    checkScroll(); 
 });
 
 
@@ -84,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-
+//Nav bar toggle
 document.addEventListener("DOMContentLoaded", function () {
     const toggleButton = document.querySelector(".navbar-toggle");
     const mobileMenu = document.querySelector("#mobileMenu");
