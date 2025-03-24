@@ -157,8 +157,8 @@
     border-radius: 12px;
     color: white;
     opacity: 0.8;
-    background:url('assets/svg/Background+Blur.png')no-repeat center,
-                url('assets/svg/svg.png') no-repeat center/cover;
+    background:url('/assets/svg/Background+Blur.png')no-repeat center,
+                url('/assets/svg/svg.png') no-repeat center/cover;
 }
 
 

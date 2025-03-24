@@ -30,7 +30,7 @@
     
     background-image: 
         radial-gradient(circle, rgba(41, 43, 28, 0.9) 5%, rgba(0, 0, 0, 0) 30%),
-        url("..assets/images/background.jpg");
+        url("../assets/images/background.jpg");
 
     background-size: cover;
     background-position: center;
@@ -66,7 +66,7 @@
     text-align: center;
     transition: 0.3s ease-in-out;
     width: fit-content;
-    margin-top:15vh;
+    margin-top:20vh;
     margin-bottom: 5vh;
 
 }
@@ -282,6 +282,54 @@
         margin-top: 50px;
         margin-left: 10vh;
     }
+
+/* Specific Mobile Screens (iPhone SE, Samsung Galaxy, Galaxy Z Fold 5) */
+@media (max-width: 882px) {
+    .hero-section {
+        font-size: 40px;
+        height: 60vh;
+        margin-top: 8vh;
+    }
+
+    .main-heading {
+        font-size: 45px;
+        line-height: 1.2;
+        margin-bottom: 2vh;
+    }
+
+    .rounded-button {
+        font-size: 16px;
+        padding: 10px 24px;
+        margin-top: 6vh;
+        margin-bottom: 2vh;
+    }
+
+    .underline-image {
+        width: 40%;
+        height: auto;
+        margin-top: 30px;
+        margin-left: 5vh;
+    }
+
+    .trusted-text {
+        font-size: 14px;
+        margin-top: 1vh;
+    }
+
+    .btn-warning {
+        margin-top: 3vh;
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+
+    .logo-btn {
+        margin-top: 5vh;
+    }
+
+    .hero-section h2.rounded-button {
+        margin-top: 25vh; 
+    }
+}
 
 
 @media only screen and (min-width: 1025px) {

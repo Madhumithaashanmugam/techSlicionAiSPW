@@ -169,6 +169,62 @@
     margin: 5px;
     display: block;
 }
+/* Mobile and Tablet View */
+@media (max-width: 1368px) {
+    .navbar-nav {
+        display: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    .navbar-toggle {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        border: none;
+        background: transparent;
+    }
+
+    .icon-bar {
+        background-color: white;
+    }
+
+    .navbar-brand {
+        font-size: 22px;
+        color: white !important;
+        text-decoration: none;
+        font-weight: bold;
+        margin-left: auto;
+        margin-bottom: 10vh;
+    }
+
+    .mobile-nav ul {
+        padding-left: 0;
+    }
+
+    .mobile-nav ul li:last-child {
+        padding-top: 20px;
+    }
+
+    .navbar-btn {
+        position: absolute;
+        right: 60px;
+        top: 15px;
+    }
+
+    #brand-logo {
+        font-size: 20px;
+        font-weight: bold;
+        padding: 10px 15px;
+        display: inline-block;
+    }
+
+    .navbar-nav li {
+        display: block;
+        width: 100%;
+    }
+}
 
 /* Mobile View */
 @media (max-width: 768px) {
