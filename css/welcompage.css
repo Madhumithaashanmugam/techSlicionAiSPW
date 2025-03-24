@@ -283,7 +283,6 @@
         margin-left: 10vh;
     }
 
-/* Specific Mobile Screens (iPhone SE, Samsung Galaxy, Galaxy Z Fold 5) */
 @media (max-width: 882px) {
     .hero-section {
         font-size: 40px;
