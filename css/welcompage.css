@@ -149,7 +149,14 @@
     display: flex; 
     justify-content: center; 
     align-items: center; 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* bottom shadow */
+    transition: box-shadow 0.3s ease; /* smooth transition */
 }
+.stats-section .thumbnail:hover {
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45); /* deeper shadow on hover */
+    transform: translateY(-4px); /* slight lift on hover (optional) */
+}
+
 
 .stats-section .thumbnail img {
     width: 100%; 
